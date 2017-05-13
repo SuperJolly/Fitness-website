@@ -1,0 +1,305 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"fu",
+				"function"
+			],
+			[
+				"server",
+				"serverInfo"
+			],
+			[
+				"even",
+				"eventEmitter"
+			],
+			[
+				"pro",
+				"processPublicTimeline"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "Package Control: ",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: In",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 464.0
+	},
+	"console":
+	{
+		"height": 153.0,
+		"history":
+		[
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/G/Vue_Resources/vue-express-mongodb/src/components/Index.vue",
+		"/G/Vue_Resources/vue-express-mongodb/router/index.js",
+		"/G/Vue_Resources/vue-express-mongodb/build/build.js",
+		"/G/Vue_Resources/vue-express-mongodb/build/dev-client.js",
+		"/G/Vue_Resources/vue-express-mongodb/build/dev-server.js",
+		"/G/Vue_Resources/vue-express-mongodb/config/dev.env.js",
+		"/G/Vue_Resources/vue-express-mongodb/config/index.js",
+		"/G/Vue_Resources/vue-express-mongodb/package.json",
+		"/G/Vue_Resources/vue-express-mongodb/data.js",
+		"/G/Vue_Resources/vue-express-mongodb/build/utils.js",
+		"/G/Vue_Resources/vue-express-mongodb/app.js",
+		"/G/Vue_Resources/vue-express-mongodb/build/webpack.dev.conf.js",
+		"/G/Vue_Resources/vue-express-mongodb/build/webpack.base.conf.js",
+		"/G/Vue_Resources/vue-express-mongodb/router/movie.js",
+		"/G/Vue_Resources/vue-express-mongodb/src/App.vue",
+		"/G/Vue_Resources/vue-express-mongodb/src/components/Detail.vue",
+		"/G/Vue_Resources/vue-express-mongodb/src/components/List.vue",
+		"/G/Vue_Resources/vue-express-mongodb/config/db.js",
+		"/G/Vue_Resources/vue-express-mongodb/models/movie.js",
+		"/G/Vue_Resources/vue-express-mongodb/index.html",
+		"/G/Vue_Resources/vue-express-mongodb/build/vue-loader.conf.js",
+		"/G/Vue_Resources/vue-express-mongodb/build/webpack.prod.conf.js",
+		"/G/Vue_Resources/vue-express-mongodb/config/prod.env.js",
+		"/G/Vue_Resources/vue-express-mongodb/src/router/index.js",
+		"/C/Users/高磊/Downloads/Jit-2.0.1/Jit/Examples/Spacetree/example1.html",
+		"/G/Vue_Resources/vue-express-mongodb/.gitignore",
+		"/C/Users/高磊/Desktop/BBBSSS/MyProject/vue-hackernews-2.0/src/store/api.js",
+		"/G/Vue_Resources/vue2-demo/src/pages/login/index.vue",
+		"/G/Vue_Resources/vue2-demo/config/index.js",
+		"/G/Vue_Resources/vue2-demo/src/store/user.js",
+		"/G/Vue_Resources/vue2-demo/src/config/routes.js",
+		"/G/Vue_Resources/vue2-demo/src/main.js",
+		"/G/Vue_Resources/vue2-demo/server.js",
+		"/G/Vue_Resources/vue2-demo/docs/2.md",
+		"/G/Vue_Resources/vue2-demo/docs/1.md",
+		"/C/Users/高磊/Desktop/BBBSSS/MyProject/vue-hackernews-2.0/build/webpack.client.config.js",
+		"/C/Users/高磊/Desktop/BBBSSS/MyProject/vue-hackernews-2.0/src/entry-client.js",
+		"/C/Users/高磊/Desktop/BBBSSS/MyProject/vue-hackernews-2.0/build/setup-dev-server.js",
+		"/C/Users/高磊/Desktop/BBBSSS/MyProject/vue-hackernews-2.0/build/vue-loader.config.js",
+		"/C/Users/高磊/Desktop/BBBSSS/MyProject/vue-hackernews-2.0/build/webpack.server.config.js",
+		"/C/Users/高磊/Desktop/BBBSSS/MyProject/vue-hackernews-2.0/src/entry-server.js",
+		"/C/Users/高磊/Desktop/BBBSSS/MyProject/vue-hackernews-2.0/server.js",
+		"/C/Users/高磊/Desktop/BBBSSS/MyProject/vue-hackernews-2.0/manifest.json",
+		"/C/Users/高磊/Desktop/BBBSSS/MyProject/vue-hackernews-2.0/build/webpack.base.config.js",
+		"/C/Users/高磊/Desktop/BBBSSS/MyProject/vue-hackernews-2.0/src/index.template.html",
+		"/C/Users/高磊/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/.jsbeautifyrc",
+		"/C/Users/高磊/Desktop/BBBSSS/MyProject/vue-hackernews-2.0/package.json",
+		"/C/Users/高磊/Desktop/BBBSSS/MyProject/vue-hackernews-2.0/node_modules/buble/package.json",
+		"/C/Users/高磊/Desktop/BBBSSS/testWebPack/package.json",
+		"/C/Users/高磊/Desktop/BBBSSS/testWebPack/app/config.json",
+		"/C/Users/高磊/Desktop/BBBSSS/testWebPack/app/Greeter.js",
+		"/C/Users/高磊/Desktop/BBBSSS/vue-tools/vue-router-simple-example/vue-2.0-simple-routing-example/webpack.config.js",
+		"/C/Users/高磊/Desktop/BBBSSS/vue-tools/vue-router-simple-example/vue-2.0-simple-routing-example/package.json",
+		"/C/Users/高磊/Desktop/BBBSSS/testWebPack/webpack.config.js",
+		"/C/Users/高磊/Desktop/BBBSSS/vue-tools/vue-router-simple-example/vue-2.0-simple-routing-example/src/pages/404.vue",
+		"/C/Users/高磊/Desktop/BBBSSS/testWebPack/config.json",
+		"/C/Users/高磊/Desktop/BBBSSS/testWebPack/app/main.js",
+		"/C/Users/高磊/Desktop/BBBSSS/testWebPack/public/index.html",
+		"/C/Users/高磊/Desktop/BBBSSS/testWebPack/public/bundle.js",
+		"/C/Users/高磊/Desktop/BBBSSS/vue-tools/vue-router-simple-example/vue-2.0-simple-routing-example/src/components/VLink.vue",
+		"/C/Users/高磊/Desktop/BBBSSS/vue-tools/vue-router-simple-example/vue-2.0-simple-routing-example/src/layouts/Main.vue",
+		"/C/Users/高磊/Desktop/BBBSSS/vue-tools/vue-router-simple-example/vue-2.0-simple-routing-example/src/pages/About.vue",
+		"/C/Users/高磊/Desktop/BBBSSS/vue-tools/vue-router-simple-example/vue-2.0-simple-routing-example/src/pages/Home.vue",
+		"/C/Users/高磊/Desktop/BBBSSS/vue-tools/vue-router-simple-example/vue-2.0-simple-routing-example/src/routes.js",
+		"/C/Users/高磊/Desktop/BBBSSS/vue-tools/vue-router-simple-example/vue-2.0-simple-routing-example/src/main.js",
+		"/C/Users/高磊/Desktop/BBBSSS/vue-tools/vue-router-simple-example/vue-2.0-simple-routing-example/index.html",
+		"/C/Users/高磊/Desktop/BBBSSS/vue-tools/vue-router-simple-example/vue-2.0-simple-routing-example/.gitignore",
+		"/C/Users/高磊/Desktop/BBBSSS/vue-tools/vue-router-simple-example/vue-2.0-simple-routing-example/.babelrc",
+		"/C/Users/高磊/Desktop/BBBSSS/vue-tools/vue-devtools/shells/chrome/manifest.json",
+		"/G/node/testbase.js",
+		"/G/node/node_modules/node-mime/src/index.js",
+		"/G/node/examples/index.html",
+		"/C/Users/高磊/Desktop/node/event.js",
+		"/C/Users/高磊/Desktop/node/hello.txt",
+		"/C/Users/高磊/Desktop/node/tcp.js",
+		"/C/Users/高磊/Desktop/node/inspectjsdom.js",
+		"/C/Users/高磊/Desktop/node/MutiTest.js",
+		"/C/Users/高磊/Desktop/node/readFile.js"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"G:\\Vue_Resources\\vue-express-mongodb",
+			"G:\\Vue_Resources\\vue2-demo",
+			"C:\\Users\\高磊\\Desktop\\BBBSSS\\MyProject\\vue-hackernews-2.0\\src",
+			"C:\\Users\\高磊\\Desktop\\BBBSSS\\MyProject\\vue-hackernews-2.0"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"opn",
+			"connect",
+			"NODE_ENV",
+			"proxyMiddleware",
+			"proxyTable",
+			"config",
+			"proxyTable",
+			"addMovie",
+			"mongodb",
+			"watchList",
+			"FETCH_LIST_DATA",
+			"$mount",
+			"hot",
+			"serve",
+			"serverInfo",
+			"vue-ser",
+			"__INITIAL_STATE__",
+			"es6-promise",
+			"serverConfig",
+			"entry-server",
+			"name",
+			"buble",
+			"version",
+			"renderer",
+			"name",
+			"port",
+			"inline",
+			"dev",
+			"extensions",
+			"lookUpType"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "Index.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 229.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
