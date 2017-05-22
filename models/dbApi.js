@@ -1,5 +1,6 @@
 const listItemModel = require('../data/pagelist')
 const userListModel = require('../data/users')
+const adminListModel = require('../data/admins')
 const listItemAPI =  {
 	findByType: function(type, size, curPage) {
 		return listItemModel.findItemsByType(type, size, curPage)
@@ -55,7 +56,23 @@ const userInfoAPI = {
 		return userListModel.getMailData()
 	}
 }
+
+const adminInfoAPI = {
+	adminLogIn: function(data) {
+		return adminListModel.adminLogIn(data)
+	},
+	getUserList: function() {
+		return userListModel.getUserList()
+	},
+	deleteOneUser: function(data) {
+		return userListModel.deleteOneUser(data)
+	},
+	editOneUserInfo: function(data) {
+		return userListModel.editOneUserInfo(data)
+	}
+}
 module.exports = {
 	listItemAPI,
-	userInfoAPI
+	userInfoAPI,
+	adminInfoAPI
 }
