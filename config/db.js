@@ -1,4 +1,3 @@
-require('../data/utils')
 const mongoose = require('mongoose')
 
 const dbConfig =  {
