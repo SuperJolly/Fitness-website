@@ -17,6 +17,10 @@ const state = {
 	userImage: require('../static/images/img.png'),
 	userlogIn: false,
 	userId: null,
+	admin: {
+		adminName: null,
+		adminLevel: null
+	},
 	items: {            //every list’s counts
 		newPub: 0,
 		hotPub: 0

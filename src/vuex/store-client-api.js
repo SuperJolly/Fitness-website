@@ -123,15 +123,35 @@ export function saveUserInfo(data) {
 }
 
 export function getTopWeekRank(data) {
-	console.log(data)
 	return axios.get('/api/get_top_week_rank', {
 		params: data
 	})
 }
 
 export function getTopMonthRank(data) {
-	console.log(data)
 	return axios.get('/api/get_top_month_rank', {
+		params: data
+	})
+}
+
+export function adminLogIn(data) {
+	return axios.post('/api/admin_login', {
+		params: data
+	})
+}
+
+export function getUserList() {
+	return axios.get('/api/get_user_list')
+}
+
+export function deleteOneUser(data) {
+	return axios.post('/api/delete_one_user', {
+		params: data
+	})
+}
+
+export function editOneUserInfo(data) {
+	return axios.post('/api/edit_one_user', {
 		params: data
 	})
 }

@@ -13,5 +13,8 @@ export default {
 	},
 	getUserIntro(state) {
 		return state.userIntro
+	},
+	getAdminName(state) {
+		return state.admin.adminName
 	}
 }

@@ -131,5 +131,11 @@ export default {
 			v.cachePlans = ['', '']
 			v.dayCounts = 0
 		})
+	},
+	[types.SET_ADMIN_NAME](state, payload) {
+		state.admin.adminName = payload.name
+	},
+	[types.LOG_OUT_ADMIN](state, payload) {
+		state.admin.adminName = null
 	}
 }

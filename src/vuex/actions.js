@@ -230,3 +230,51 @@ export const GET_TOP_ALL_RANK = ({commit, state}, {weekDate, monthDate}) => {
 			throw err
 		})
 }
+
+export const LOGIN_ADMIN = ({commit, state}, {uname, upwd}) => {
+	const data = {
+		uname,
+		upwd
+	}
+	return client_api.adminLogIn(data)
+		.then((res) => {
+			return res.data
+		})
+		.catch((err) => {
+			throw err
+		})
+	console.log(data)
+}
+
+export const LOAD_USER_LIST = ({commit, state}) => {
+	return  client_api.getUserList()
+		.then((res) => {
+			return res.data
+		})
+		.catch((err) => {
+			throw err
+		})
+}
+
+export const DELETE_ONE_USER = ({commit, state}, {uname}) => {
+	const data = {
+		uname
+	}
+	return client_api.deleteOneUser(data)
+		.then((res) => {
+			return res.data.rescode
+		})
+		.catch((err) => {
+			throw err
+		})
+}
+
+export const EDIT_ONE_USER_INFO = ({commit, state}, data) => {
+	return client_api.editOneUserInfo(data)
+		.then((res) => {
+			return res.data.rescode
+		})
+		.catch((err) => {
+			throw err
+		})
+}
