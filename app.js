@@ -7,16 +7,17 @@ const mongoose = require('mongoose')
 const index = require('./router/index')
 const listItems = require('./router/listItem')
 const userInfo = require('./router/userInfo')
+const adminInfo = require('./router/adminInfo')
 const scheduleMailer = require('./mailer')
+
 const app = express()
 const port = process.env.PORT || 3000
-
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(favicon(__dirname + '/src/assets/favicon.ico'))
 app.use(express.static('dist'))
 app.use('/',index)
-app.use('/api',[listItems,userInfo])
+app.use('/api',[listItems,userInfo,adminInfo])
 app.use(scheduleMailer.scheduleJob)
 
 app.listen(port, () => {
