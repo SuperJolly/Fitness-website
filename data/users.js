@@ -264,6 +264,23 @@ userSchema.statics.saveUserInfo = function(data, cb) {
   }
 }
 
+userSchema.statics.editOneUserInfo = function(data, cb) {
+  const setObj = {}
+  if(data.upwd) {
+    setObj.pwd = data.upwd
+  }
+  if(data.uage) {
+    setObj.age = data.uage
+  }
+  if(data.uphone) {
+    setObj.phone = data.uphone
+  }
+  if(data.umail) {
+    setObj.mail = data.umail
+  }
+  return this.findOne({'name': data.uname}).update({$set: setObj}).exec(cb)
+}
+
 userSchema.statics.getTopWeekRank = function(data, cb) {
   const weekDate = data.weekDate
   let resData = []
@@ -337,6 +354,14 @@ userSchema.statics.getTopMonthRank = function(data, cb) {
 
 userSchema.statics.getMailData = function(cb) {
   return this.find({},'name dayComplete plans mail').where('mail').ne('').exec(cb)
+}
+
+userSchema.statics.getUserList = function(cb) {
+  return this.find({},'name').exec(cb)
+}
+
+userSchema.statics.deleteOneUser = function(data,cb) {
+  return this.remove({'name': data.uname}).exec(cb)
 }
 
 const userListModel = mongoose.model('userlist', userSchema)
