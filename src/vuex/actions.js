@@ -8,6 +8,7 @@ export const FETCH_ITEMS = ({ commit, state }, { type, currentPage }) => {
 		return client_api.fetchItem(type, state.pageSize, currentPage)
 			.then((res) => {
 				commit(types.SET_ITEMS, { res })
+				return true
 			})
 			.catch((err) => {
 				console.log(err);

@@ -1,55 +1,55 @@
 <template lang="html" v-if="items">
     <div>
       <h3>{{getSubTitle}}</h3>
-      <div class="item-view" v-if="items">
-          <transition-group name="fade-list" tag="ul">
-              <li class="item-view-header" v-for="item in items" :key="item">
-                <a :href="item.url" target="_blank">
-                  <h1>{{ item.title }}</h1>
-                </a>
-                <span v-if="item.url" class="host">
-                  ({{ item.url }})
-                </span>
-                <p class="meta">
-                  by {{ item.author }}
-                  {{ item.created_at }} ago
-                </p>
-              </li>
-          </transition-group>
+      <div class="item-view">
+              <ul>
+                <li class="item-view-header fadeIDown" v-for="item in items" :key="item">
+                  <h3>
+                    <a :href="item.url" target="_blank">{{ item.title }}</a>
+                  </h3>
+                  <span v-if="item.author" class="host">
+                    (By {{ item.author }})
+                  </span>
+                  <span class="meta">
+                      {{item.body}}
+                  </span>
+                  <span class="footer">
+                    日期: {{item.created_at}}
+                  </span>
+                </li>
+              </ul>
         </div>
     <mu-pagination v-if="total" :total="total" :current="current" :pageSize="pageSize" @pageChange="handleClick"></mu-pagination>
     </div>
+  </transition>
 </template>
 
 <script>
-function fetchItem (store, type, current) {
-  store.dispatch('FETCH_ITEMS', {
-    type: type,
-    currentPage: current
-  })
-}
 export default {
   data() {
     return {
       pageSize: this.$store.state.pageSize,
-      current: 1
+      current: 1,
+      transitionStatus: false
     }
   },
-
   props: {
     type: String
   },
   methods: {
     handleClick(newIndex) {
-      fetchItem(this.$store, this.type, newIndex)
+      this.fetchItem(this.$store, this.type, newIndex)
+    },
+    fetchItem(store, type, current) {
+      store.dispatch('FETCH_ITEMS', {
+        type: type,
+        currentPage: current
+      })
     }
   },
   created () {
-    fetchItem(this.$store, this.type, this.current)
+    this.fetchItem(this.$store, this.type, this.current)
   },
-  // mounted() {
-  //   this.total = this.$store.state.items[this.type]
-  // },
   computed: {
     items () {
       return this.$store.state.lists[this.type]
@@ -71,40 +71,89 @@ export default {
     .hotPub, .newPub {
       width: 50%;
     }
+    .item-view {
+      margin-bottom: 20px;
+    }
+    .fadeIDown {
+      -webkit-animation: fadeIDown 1s;
+      -moz-animation: fadeIDown 1s;
+      -o-animation: fadeIDown 1s;
+      animation: fadeIDown 1s;
+    }
     .item-view-header {
+      max-width: 500px;
+      margin-bottom: 5px;
       box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
       opacity: 1;
       background-color: #fff;
-      padding: 10px 30px 10px 45px;
+      padding: 15px 30px 10px 45px;
       border-bottom: 1px solid #eee;
       position: relative;
+      transition: all .4s ease-out;
       line-height: 20px;
-      h1 {
-        display: inline;
-        font-size: 1.5em;
+      h3 {
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        line-height: 1;
+        font-weight: 600;
+        font-size: 22px;
         margin: 0;
-        margin-right: .5em;
+        text-rendering: optimizeLegibility;
+        font-family: 'PingHei', 'PingFang SC', Helvetica Neue, 'Work Sans', 'Hiragino Sans GB', 'Microsoft YaHei', SimSun, sans-serif;
+        a {
+          text-decoration: none;
+          letter-spacing: 1px; 
+        }
       }
-      .host, .meta, .meta a {
+      .host {
+        float: right;
+
+      }
+      .meta {
+        width: 100%;
+        height: 25px;
+        display: inline-block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      .footer {
+        font-size: 12px;
+        color: #bbbbbb;
+      }
+      .host, .meta{
         color: #999;
       }
-      .meta a {
-        text-decoration: underline;
+
+    }
+    @keyframes fadeIDown {
+      0% {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
       }
     }
-  
-  .fade-list-enter-active {
-    transition: all 2s
-  }
-  .fade-list-enter {
-
-    transform: translate3d(0, -20px, 0)
-  }
-  .fade-list-leave {
-    opacity: 0
-  }
-  .fade-list-leave-active {
-    transition: all 1s
-  }
-
+    @-webkit-keyframes fadeIDown {
+      0% {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    @-moz-keyframes fadeIDown {
+      0% {
+        opacity: 0;
+        transform: translateY(-5px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
 </style>

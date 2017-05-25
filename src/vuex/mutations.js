@@ -22,6 +22,8 @@ export default {
 		state.items[type] = res.data.count
 		res.data.items.forEach(item => {
 			if(item) {
+				const index = item.created_at.indexOf("T");
+				item.created_at = item.created_at.slice(0,index)
 				state.lists[type].push(item)
 			}
 		})
