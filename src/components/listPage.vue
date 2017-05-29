@@ -100,9 +100,13 @@ export default {
         margin: 0;
         text-rendering: optimizeLegibility;
         font-family: 'PingHei', 'PingFang SC', Helvetica Neue, 'Work Sans', 'Hiragino Sans GB', 'Microsoft YaHei', SimSun, sans-serif;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
         a {
           text-decoration: none;
           letter-spacing: 1px; 
+          color: #696969;
         }
       }
       .host {
