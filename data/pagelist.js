@@ -34,21 +34,3 @@ listSchema.statics.findItemCount = function(type, cb) {
   }
 }
 const listItemModel = module.exports = mongoose.model('pagelist',listSchema)
-// var test = new listItemModel({
-//   title: 'Dalao',
-//   url: 'https://www.facebook.com',
-//   author: 'Dalao',
-//   body: '',
-//   pointCount: 35,
-//   image: '',
-//   comments: [{
-//     body: ''
-//   }]
-// });
-// test.save(function(err){
-//     if(err){
-//         console.log(err);
-//     }else{
-//         console.log('The test example is saved');
-//     }
-// });
