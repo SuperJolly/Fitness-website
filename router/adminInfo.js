@@ -49,7 +49,6 @@ router.post('/edit_one_user', (req, res) => {
 
 	adminInfoApi.editOneUserInfo(data)
 		.then((resdata) => {
-			console.log(resdata)
 			if(resdata.nModified === 1) {
 				res.json({'rescode': 202})
 			}

@@ -24,8 +24,6 @@ router.get('/get_user_by_name', (req, res) => {
 
 router.get('/get_top_week_rank', (req, res) => {
 	const data = req.query
-	console.log('----><---')
-	console.log(data)
 	userInfoApi.getTopWeekRank(data).onResolve((resdata) => {
 		if(!resdata) {              // 暂无用户数据
 			res.json({'rescode':400})
@@ -39,8 +37,6 @@ router.get('/get_top_week_rank', (req, res) => {
 
 router.get('/get_top_month_rank', (req, res) => {
 	const data = req.query
-	console.log('----><---')
-	console.log(data)
 	userInfoApi.getTopMonthRank(data).onResolve((resdata) => {
 		if(!resdata) {              // 暂无用户数据
 			res.json({'rescode':400})
@@ -59,7 +55,6 @@ router.post('/register_user', (req, res) => {
 	}
 	userInfoApi.addNewUser(data)
 		.then((data) => {
-			console.log(data)
 			res.json({
 				rescode: 0
 			})
@@ -123,7 +118,6 @@ router.post('/get_month_plan', (req, res) => {
 
 	userInfoApi.getMonthPlan(data)
 		.then((resdata) => {
-			console.log(resdata)
 			if(resdata !== null) {
 				res.json({resdata,'rescode': 203})
 			} else {
@@ -173,8 +167,6 @@ router.post('/get_all_plan', (req, res) => {
 		} else {
 			res.json({'plans':resdata, 'rescode':203})
 		}
-		console.log('--------------->><<---------------')
-		console.log(resdata)
 	})
 
 })
